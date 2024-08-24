@@ -20,7 +20,7 @@ nav {
     top: 0;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -85,9 +85,8 @@ nav {
 
 .hero h1 {
     font-size: 48px;
-    margin-bottom: 10px;
     font-weight: bold;
-    background-color: #33333393;
+    background-color: #ffffff93;
     padding: 10px;
     border-radius: 8px;
 }
@@ -96,9 +95,55 @@ nav {
     font-size: 24px;
     line-height: 1.4;
     font-style: italic;
-    background-color: #33333393;
+    background-color: #ffffff93;
     padding: 10px;
     border-radius: 8px;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #25D366; /* Color verde de WhatsApp */
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe59; /* Color verde oscuro en hover */
+}
+
+/* Sección Maquinaria */
+.table-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.table-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.table-cell {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.machine-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.table-cell p {
+    margin: 0;
 }
 
 /* Secciones */
@@ -148,7 +193,6 @@ section h3 {
 
     .hero h1 {
         font-size: 36px;
-        margin-bottom: 10px;
     }
 
     .hero h2 {
@@ -165,6 +209,19 @@ section h3 {
 
     section p, section h3 {
         font-size: 16px;
+    }
+
+    .table-row {
+        flex-direction: column;
+    }
+
+    .table-cell {
+        width: 100%;
+        text-align: center;
+    }
+
+    .table-cell p {
+        margin-top: 10px;
     }
 }
 
